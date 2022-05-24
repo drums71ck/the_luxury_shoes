@@ -31,5 +31,6 @@
       <TextArea layoutX="240.0" layoutY="238.0" prefHeight="32.0" prefWidth="188.0" text="Email:" />
       <TextArea layoutX="240.0" layoutY="294.0" prefHeight="38.0" prefWidth="188.0" text="Shopping cart" />
       <Button layoutX="240.0" layoutY="360.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="87.0" text="Buy" />
+      <Button layoutX="240.0" layoutY="412.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="117.0" text="Save" />
    </children>
 </AnchorPane>
