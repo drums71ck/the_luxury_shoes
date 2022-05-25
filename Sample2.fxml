@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
@@ -20,10 +21,10 @@
             <Image url="@../../../../../Música/pngegg.png" />
          </image>
       </ImageView>
-      <TextArea layoutX="127.0" layoutY="243.0" prefHeight="14.0" prefWidth="225.0" text="Username: " />
-      <TextArea layoutX="127.0" layoutY="302.0" prefHeight="38.0" prefWidth="225.0" text="Password:" />
+      <TextArea layoutX="127.0" layoutY="243.0" prefHeight="14.0" prefWidth="225.0" promptText="Username" />
       <Button layoutX="178.0" layoutY="364.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="123.0" text="Accept" />
       <Label layoutX="153.0" layoutY="450.0" text="You don't haven't account?" />
-      <Label layoutX="187.0" layoutY="488.0" text="Register with us" />
+      <Label fx:id="Registrate" layoutX="187.0" layoutY="488.0" onMouseClicked="#Registrateonclicket" text="Register with us" />
+      <PasswordField layoutX="127.0" layoutY="302.0" prefHeight="38.0" prefWidth="225.0" promptText="Password" />
    </children>
 </AnchorPane>
