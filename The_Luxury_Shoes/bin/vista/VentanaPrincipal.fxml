@@ -18,6 +18,26 @@
                   <Image url="@../../../../OneDrive/Imágenes/pe.PNG" />
                </image>
             </ImageView>
+            <ImageView fx:id="foto11" fitHeight="96.0" fitWidth="122.0" layoutX="221.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Imágenes/pe.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="foto111" fitHeight="96.0" fitWidth="122.0" layoutX="362.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Imágenes/pe.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="foto1111" fitHeight="96.0" fitWidth="122.0" layoutX="513.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Imágenes/pe.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="foto11111" fitHeight="96.0" fitWidth="122.0" layoutX="69.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Imágenes/pe.PNG" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </center>
