@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.VentanaPrincipalController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="643.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="foto1" fitHeight="96.0" fitWidth="122.0" layoutX="69.0" layoutY="34.0" onMouseClicked="#btnImage1unclicket" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Imágenes/pe.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="foto11" fitHeight="96.0" fitWidth="122.0" layoutX="221.0" layoutY="34.0" onMouseClicked="#btnImage2unclicket" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Imágenes/pe.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="foto111" fitHeight="96.0" fitWidth="122.0" layoutX="362.0" layoutY="34.0" onMouseClicked="#btnImagen3unclicket" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Imágenes/pe.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="foto1111" fitHeight="96.0" fitWidth="122.0" layoutX="513.0" layoutY="34.0" onMouseClicked="#btnImage4unclicket" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Imágenes/pe.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="foto11111" fitHeight="96.0" fitWidth="122.0" layoutX="69.0" layoutY="175.0" onMouseClicked="#btnImage5unclicket" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Imágenes/pe.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <TitledPane fx:id="windowPrincipal" prefHeight="58.0" prefWidth="638.0" text="The Luxury shoes" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <content>
+            <MenuBar prefHeight="72.0" prefWidth="650.0">
+              <menus>
+                <Menu fx:id="mnFootball" mnemonicParsing="false" onAction="#btnFootballClicked" text="Football">
+                  <items>
+                    <MenuItem fx:id="btnShowFootball" mnemonicParsing="false" onAction="#tVentanaPrincipalController" text="Show" />
+                  </items>
+                </Menu>
+                <Menu fx:id="mnIndoor" mnemonicParsing="false" onAction="#btnInFootballClicked" text="Indoor Football">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Show" />
+                  </items>
+                </Menu>
+                <Menu fx:id="mnVolley" mnemonicParsing="false" onAction="#btnVolley" text="Volleyball">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Show" />
+                     </items></Menu>
+                  <Menu fx:id="mnBasket" mnemonicParsing="false" onAction="#btnBasketClicked" text="Basketball">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Show" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </content>
+      </TitledPane>
+   </top>
+</BorderPane>
