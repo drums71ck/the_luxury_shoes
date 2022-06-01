@@ -35,7 +35,17 @@ public class VentanaLoginController {
 
 	@FXML
 	private Button btnRegister;
+	
 	public Boolean ActiveUser;
+	
+	public String User;
+	
+	public VentanaLoginController() {
+		
+	}
+	public VentanaLoginController(String username) {
+		User=username;
+	}
 
 	@FXML
 	void btnAcceptOnClicked(MouseEvent event) {
@@ -49,7 +59,7 @@ public class VentanaLoginController {
 			// Guardamos
 			String username = this.boxUsername.getText();
 			String password = this.boxPaswd.getText();
-
+			User=username;
 			while (result.next()) {
 				// Guardamos los metadatos en variables
 				String BDuser = result.getString("username");
@@ -104,4 +114,10 @@ public class VentanaLoginController {
 		 stg.setScene(scene);
 		 stg.show();
 	}
+	public String getUser() {
+		return User;
+	}
+
+	
+
 }

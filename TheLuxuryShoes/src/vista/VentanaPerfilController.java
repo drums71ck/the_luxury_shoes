@@ -57,7 +57,8 @@ public class VentanaPerfilController {
   			 Scene scene = new Scene(root); 
   			 stg.setScene(scene);
   			 stg.show();
-  		} catch (IOException e) {
+  			
+   		} catch (IOException e) {
   			// TODO Auto-generated catch block
   			e.printStackTrace();
   		}
