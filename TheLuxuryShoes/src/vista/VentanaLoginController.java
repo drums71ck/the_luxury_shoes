@@ -1,5 +1,6 @@
 package vista;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream.GetField;
 import java.sql.Connection;
@@ -54,11 +55,13 @@ public class VentanaLoginController {
 			Connection conn = DriverManager.getConnection("jdbc:mysql://" + c.getIP() + "/TheLuxuryShoes", c.getUser(),
 					c.getPswd());
 			Statement stats = conn.createStatement();
-			ResultSet result = stats.executeQuery("SELECT * FROM Users");
-
-			// Guardamos
 			String username = this.boxUsername.getText();
 			String password = this.boxPaswd.getText();
+			ResultSet result = stats.executeQuery("SELECT * FROM Users where username like "+"'"+username+"'"+";");
+
+			// Guardamos
+			
+		
 			User=username;
 			while (result.next()) {
 				// Guardamos los metadatos en variables
@@ -66,14 +69,19 @@ public class VentanaLoginController {
 				String BDpswd = result.getString("password");
 				// Comprobador que exista el usuario en la base dades
 				System.out.println(BDpswd+" "+BDuser);
-				if (!username.equals(BDuser) && !password.equals(BDpswd)) {
-					ActiveUser=false;
-					throw new IllegalAccessException();
-				} else {
-					System.out.println("inicio de sesion correcta");
+				if (username.equals(BDuser) && password.equals(BDpswd)) {
 					ActiveUser=true;
+					System.out.println("inicio de sesion correcta");
+					FileWriter escritura = new FileWriter("/home/marc/Documents/TheLuxuryShoes/src/vista/users.txt");
+					 for ( int i = 0; i<username.length();i++) {
+						 escritura.write(username.charAt(i));
+					 }
+					 escritura.close();
 					abrirVentana(event);
-			 		
+					
+				} else {
+					throw new IllegalAccessException();
+							
 				}
 
 			}

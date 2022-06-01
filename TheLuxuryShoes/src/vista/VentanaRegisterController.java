@@ -1,5 +1,6 @@
 package vista;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -11,10 +12,15 @@ import javax.swing.JOptionPane;
 
 import controllers.ConnectionBBDD;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
 public class VentanaRegisterController {
 
@@ -65,6 +71,18 @@ public class VentanaRegisterController {
 			// execute the preparedstatement
 			preparedStmt.execute();
 			conn.close();
+			Parent root;
+	 		try {
+	 			root = FXMLLoader.load(getClass().getResource("VentanaLogin.fxml"));
+	 			 Stage stg = new Stage();
+	 			 stg = (Stage) ((Node) event.getSource()).getScene().getWindow();
+	 			 Scene scene = new Scene(root); 
+	 			 stg.setScene(scene);
+	 			 stg.show();
+	 		} catch (IOException e) {
+	 			// TODO Auto-generated catch block
+	 			e.printStackTrace();
+	 		}
 
 		} catch (SQLException e) {
 			JOptionPane.showMessageDialog(null, "El usuario ya existe");

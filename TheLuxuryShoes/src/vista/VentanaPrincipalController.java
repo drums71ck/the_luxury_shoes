@@ -177,7 +177,7 @@ public class VentanaPrincipalController  {
 		 stg.setScene(scene);
 		 stg.show();
 		 String IdFoto1 = foto1.getId();
-		 FileWriter escritura = new FileWriter("C:\\Users\\Drumstick\\eclipse-workspace\\TheLuxuryShoes\\src\\vista\\ids.txt");
+		 FileWriter escritura = new FileWriter("/home/marc/Documents/TheLuxuryShoes/src/vista/ids.txt");
 		 for ( int i = 0; i<IdFoto1.length();i++) {
 			 escritura.write(IdFoto1.charAt(i));
 		 }
@@ -196,7 +196,7 @@ public class VentanaPrincipalController  {
 			 stg.setScene(scene);
 			 stg.show();
 			 String IdFoto2 = foto11.getId();
-			 FileWriter escritura = new FileWriter("C:/Users/Drumstick/eclipse-workspace/TheLuxuryShoes/src/vista/ids.txt");
+			 FileWriter escritura = new FileWriter("/home/marc/Documents/TheLuxuryShoes/src/vista/ids.txt");
 			 for ( int i = 0; i<IdFoto2.length();i++) {
 				 escritura.write(IdFoto2.charAt(i));
 			 }
@@ -214,7 +214,7 @@ public class VentanaPrincipalController  {
 			 stg.setScene(scene);
 			 stg.show();
 			 String IdFoto4 = foto1111.getId();
-			 FileWriter escritura = new FileWriter("C:/Users/Drumstick/eclipse-workspace/TheLuxuryShoes/src/vista/ids.txt");
+			 FileWriter escritura = new FileWriter("/home/marc/Documents/TheLuxuryShoes/src/vista/ids.txt");
 			 for ( int i = 0; i<IdFoto4.length();i++) {
 				 escritura.write(IdFoto4.charAt(i));
 			 }
@@ -231,7 +231,7 @@ public class VentanaPrincipalController  {
 			 stg.setScene(scene);
 			 stg.show();
 			 String IdFoto5 = foto11111.getId();
-			 FileWriter escritura = new FileWriter("C:/Users/Drumstick/eclipse-workspace/TheLuxuryShoes/src/vista/ids.txt");
+			 FileWriter escritura = new FileWriter("/home/marc/Documents/TheLuxuryShoes/src/vista/ids.txt");
 			 for ( int i = 0; i<IdFoto5.length();i++) {
 				 escritura.write(IdFoto5.charAt(i));
 			 }
@@ -251,7 +251,7 @@ public class VentanaPrincipalController  {
 			 stg.setScene(scene);
 			 stg.show();
 			 String IdFoto3 = foto111.getId();
-			 FileWriter escritura = new FileWriter("C:/Users/Drumstick/eclipse-workspace/TheLuxuryShoes/src/vista/ids.txt");
+			 FileWriter escritura = new FileWriter("/home/marc/Documents/TheLuxuryShoes/src/vista/ids.txt");
 			 for ( int i = 0; i<IdFoto3.length();i++) {
 				 escritura.write(IdFoto3.charAt(i));
 			 }

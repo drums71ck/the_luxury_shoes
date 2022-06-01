@@ -30,7 +30,15 @@ public class ConnectionBBDD {
 	private static String IP = "192.168.1.42";
 	private static String user = "marc";
 	private static String  pswd = "marc";
-	
+	private static String usern;
+	public static String getUsern() {
+		return usern;
+	}
+
+	public static void setUsern(String usern) {
+		ConnectionBBDD.usern = usern;
+	}
+
 	public static void main(String[] args) {
 		try {
 			
@@ -41,7 +49,7 @@ public class ConnectionBBDD {
 			 ResultSet result = stats.executeQuery("SELECT * FROM Users");
 			 
 			 while (result.next()) {
-				 System.out.println(result.getString("username")+"-"+result.getString("password"));
+				usern=result.getString("username");
 			 }
 			 
 		} catch (Exception e) {

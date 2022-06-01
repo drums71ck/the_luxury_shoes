@@ -114,7 +114,7 @@ public class VentanaArticleController {
     		VentanaPrincipalController pass = new VentanaPrincipalController();
     		String id = "";
     		try {
-				FileReader entrada = new FileReader("C:/Users/Drumstick/eclipse-workspace/TheLuxuryShoes/src/vista/ids.txt");
+				FileReader entrada = new FileReader("/home/marc/Documents/TheLuxuryShoes/src/vista/ids.txt");
 						int i = 0;
 				while(i!=-1) {
 					i=entrada.read();
@@ -277,6 +277,7 @@ public class VentanaArticleController {
 					boxSize.getItems().addAll(list);
 				break;
 				}
+				btnShowme.setDisable(true);
     		} catch (Exception e) {
 				e.printStackTrace();
 			}
