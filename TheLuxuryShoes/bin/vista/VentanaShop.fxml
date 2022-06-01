@@ -20,6 +20,8 @@
                   <Font size="29.0" />
                </font>
             </Label>
+            <Label layoutX="225.0" layoutY="207.0" prefHeight="18.0" prefWidth="64.0" text="Your Wallet:" />
+            <Label fx:id="txtWallet" layoutX="300.0" layoutY="207.0" text="." />
          </children>
       </AnchorPane>
    </center>

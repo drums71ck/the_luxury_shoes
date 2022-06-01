@@ -113,7 +113,6 @@ public class VentanaArticleController {
     	try {
     		VentanaPrincipalController pass = new VentanaPrincipalController();
     		String id = "";
-    		String ida = "total90";
     		try {
 				FileReader entrada = new FileReader("C:/Users/Drumstick/eclipse-workspace/TheLuxuryShoes/src/vista/ids.txt");
 						int i = 0;
