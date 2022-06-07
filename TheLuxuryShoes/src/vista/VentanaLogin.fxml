@@ -21,10 +21,12 @@
             <Image url="@assets/iconoPerfil.png" />
          </image>
       </ImageView>
-      <TextArea fx:id="boxUsername" layoutX="127.0" layoutY="243.0" prefHeight="14.0" prefWidth="225.0" promptText="Username" />
+      <TextArea fx:id="boxUsername" layoutX="127.0" layoutY="243.0" prefHeight="38.0" prefWidth="225.0" promptText="Username" />
       <Button fx:id="btnAccept" layoutX="178.0" layoutY="364.0" mnemonicParsing="false" onMouseClicked="#btnAcceptOnClicked" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #0067b8; -fx-background-radius: 50px;" text="Accept" textFill="WHITE" />
       <Label layoutX="170.0" layoutY="442.0" text="You don't haven't account?" />
       <PasswordField fx:id="boxPaswd" layoutX="127.0" layoutY="302.0" prefHeight="38.0" prefWidth="225.0" promptText="Password" />
       <Button fx:id="btnRegister" layoutX="188.0" layoutY="470.0" mnemonicParsing="false" onMouseClicked="#btnRegisterOnClicked" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: #0067b8;" text="Register with us" textFill="WHITE" />
+      <Label layoutX="61.0" layoutY="247.0" prefHeight="30.0" prefWidth="60.0" text="Username: " />
+      <Label layoutX="66.0" layoutY="313.0" text="Password:" />
    </children>
 </AnchorPane>

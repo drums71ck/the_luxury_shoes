@@ -27,7 +27,7 @@ public class ConnectionBBDD {
 		ConnectionBBDD.pswd = pswd;
 	}
 
-	private static String IP = "192.168.1.42";
+	private static String IP = "192.168.1.38";
 	private static String user = "marc";
 	private static String  pswd = "marc";
 	private static String usern;

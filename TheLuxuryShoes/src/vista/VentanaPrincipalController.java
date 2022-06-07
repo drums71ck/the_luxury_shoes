@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TitledPane;
@@ -13,6 +14,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import java.awt.TextArea;
 import java.io.BufferedReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -38,10 +40,7 @@ public class VentanaPrincipalController  {
 
 	@FXML
 	private ImageView foto1;
-
 	
-
-
 	@FXML
 	private ImageView foto11;
 
@@ -53,6 +52,23 @@ public class VentanaPrincipalController  {
 
 	@FXML
 	private ImageView foto11111;
+	
+	 @FXML
+	 private Label txtimg1;
+
+	 @FXML
+	 private Label txtimg2;
+
+	 @FXML
+	 private Label txtimg3;
+
+	 @FXML
+	 private Label txtimg4;
+
+	 @FXML
+	 private Label txtimg5;
+
+
 
 	@FXML
 	private Menu mnBasket;
@@ -95,6 +111,11 @@ public class VentanaPrincipalController  {
 		foto111.setId("zoomSeparate");
 		foto1111.setId("zoomFreak3");
 		foto11111.setId("jordanAirmid");
+		txtimg1.setText("AirJordan36");
+		txtimg2.setText("rebound2");
+		txtimg3.setText("zoomSeparate");
+		txtimg4.setText("zoomFreak3");
+		txtimg5.setText("jordanAirmid");
 		
 
 	}
@@ -117,6 +138,12 @@ public class VentanaPrincipalController  {
 		foto111.setId("ghosted_rosa");
 		foto1111.setId("futurez");
 		foto11111.setId("copaSense");
+		
+		txtimg1.setText("total90");
+		txtimg2.setText("xinghuanhua");
+		txtimg3.setText("ghosted_rosa");
+		txtimg4.setText("futurez");
+		txtimg5.setText("copaSense");
 	}
 
 
@@ -138,6 +165,12 @@ public class VentanaPrincipalController  {
 		foto111.setId("imviso100");
 		foto1111.setId("ViraltoII");
 		foto11111.setId("imvisoEskudo500");
+		
+		txtimg1.setText("grescaMunich");
+		txtimg2.setText("sambaAdidas");
+		txtimg3.setText("imviso100");
+		txtimg4.setText("Viralto II");
+		txtimg5.setText("imvisoEskudo500");
 	}
 	
 
@@ -158,6 +191,12 @@ public class VentanaPrincipalController  {
 		foto111.setId("asicsSkyElite");
 		foto1111.setId("asicsLightinhz6");
 		foto11111.setId("allsixV500");
+		
+		txtimg1.setText("adidasNovaflight");
+		txtimg2.setText("allsix100");
+		txtimg3.setText("asicsSkyElite");
+		txtimg4.setText("asicsLightinhz6");
+		txtimg5.setText("allsixV500");
 
 
 	}

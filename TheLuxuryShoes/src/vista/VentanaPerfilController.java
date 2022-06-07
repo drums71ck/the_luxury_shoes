@@ -79,7 +79,7 @@ public class VentanaPerfilController {
 			Statement stats = conn.createStatement();
 			String username = "";
 			try {
-				FileReader entrada2 = new FileReader("/home/marc/Documents/TheLuxuryShoes/src/vista/users.txt");
+				FileReader entrada2 = new FileReader("eclipse-workspace\\TheLuxuryShoes\\src\\vista\\users.txt");
 				int j = 0;
 				while (j != -1) {
 					j = entrada2.read();
@@ -98,7 +98,7 @@ public class VentanaPerfilController {
 				VentanaPrincipalController pass = new VentanaPrincipalController();
 				String id = "";
 
-				FileReader entrada = new FileReader("/home/marc/Documents/TheLuxuryShoes/src/vista/ids.txt");
+				FileReader entrada = new FileReader("eclipse-workspace\\TheLuxuryShoes\\src\\vista\\ids.txt");
 				int i = 0;
 				while (i != -1) {
 					i = entrada.read();
