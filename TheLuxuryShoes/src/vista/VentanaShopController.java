@@ -29,22 +29,7 @@ public class VentanaShopController {
 	@FXML
 	public Label txtWallet;
 
-	// @FXML
-	/*
-	 * void showWallet() { ConnectionBBDD c = new ConnectionBBDD(); try { String id
-	 * = ""; VentanaLoginController loginController = new VentanaLoginController();
-	 * System.out.println(loginController.getUser()); Connection conn =
-	 * DriverManager.getConnection("jdbc:mysql://" + c.getIP() + "/TheLuxuryShoes",
-	 * c.getUser(), c.getPswd()); Statement stats = conn.createStatement();
-	 * 
-	 * ResultSet result = stats.executeQuery(
-	 * "SELECT * FROM Users where username like " + "'" + loginController.getUser()
-	 * + "'" + ";"); result.next(); txtWallet.setText(result.getString("wallet")); }
-	 * catch (SQLException e) {
-	 * 
-	 * e.printStackTrace(); } }
-	 */
-
+	
 	@FXML
 	void btnPayOnClicked(MouseEvent event) throws IOException {
 		ConnectionBBDD c = new ConnectionBBDD();
@@ -54,8 +39,7 @@ public class VentanaShopController {
 					c.getPswd());
 			Statement stats = conn.createStatement();
 
-			FileReader entrada = new FileReader(
-					"/home/marc/Documents/TheLuxuryShoes/src/vista/ids.txt");
+			FileReader entrada = new FileReader("eclipse-workspace\\TheLuxuryShoes\\src\\vista\\ids.txt");
 			int i = 0;
 			while (i != -1) {
 				i = entrada.read();
