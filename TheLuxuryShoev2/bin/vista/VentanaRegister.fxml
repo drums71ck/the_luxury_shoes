@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.VentanaRegisterController">
+   <top>
+      <TitledPane prefHeight="0.0" prefWidth="483.0" text="Register" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="196.0" layoutY="87.0" text="Register">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsername" layoutX="133.0" layoutY="184.0" prefHeight="26.0" prefWidth="216.0" promptText="Username" />
+            <TextField fx:id="txtEmail" layoutX="133.0" layoutY="232.0" prefHeight="26.0" prefWidth="216.0" promptText="E-mail" />
+            <Button fx:id="btnCreate" layoutX="190.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#btnCreateOnClicked" prefHeight="32.0" prefWidth="89.0" style="-fx-background-color: #1a73e8;" text="Create" textFill="WHITE" AnchorPane.bottomAnchor="206.0" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="197.6" AnchorPane.topAnchor="338.0">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="txtPassword" layoutX="133.0" layoutY="282.0" prefHeight="26.0" prefWidth="218.0" promptText="Password" />
+            <Label layoutX="66.0" layoutY="189.0" text="Username:" />
+            <Label layoutX="86.0" layoutY="237.0" text="E-mail:" />
+            <Label layoutX="68.0" layoutY="287.0" text="Password:" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
